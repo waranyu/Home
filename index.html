@@ -3,198 +3,37 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
-<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
-<link rel="stylesheet" href="/w3css/3/w3.css">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 </style>
 <body class="w3-theme-l5">
 
 <!-- Navbar -->
-  <div style="overflow:auto;">
-    <ul class="w3-navbar w3-left" style="width:100%;overflow:hidden;height:44px">
-      <li><a href="javascript:void(0);" class="topnav-localicons w3-hide-large w3-left" onclick="open_menu()" title="เมนู"><font><font>☰</font></font></a></li>
-      <li><a href="/default.asp" class="topnav-icons fa fa-home w3-left" title="บ้าน"></a></li>
-      <li><a href="/html/default.asp" title="HTML Tutorial"><font><font>HTML</font></font></a></li>
-      <li><a href="/css/default.asp" title="CSS Tutorial"><font><font>CSS</font></font></a></li>
-      <li><a href="/js/default.asp" title="JavaScript Tutorial">JAVASCRIPT</a></li>
-      <li><a href="/sql/default.asp" title="SQL Tutorial">SQL</a></li>
-      <li><a href="/php/default.asp" title="PHP Tutorial">PHP</a></li>
-      <li><a href="/bootstrap/default.asp" title="Bootstrap Tutorial">BOOTSTRAP</a></li>
-      <li><a href="/jquery/default.asp" title="jQuery Tutorial">JQUERY</a></li>
-      <li><a href="/angular/default.asp" title="Angular Tutorial">ANGULAR</a></li>
-      <li><a href="/w3css/default.asp" title="W3.CSS Tutorial" class="active">W3.CSS</a></li>
-      <li><a href="/xml/default.asp" title="XML Tutorial">XML</a></li>
-      <li><a id="topnavbtn_tutorials" href="javascript:void(0);" onclick="w3_open_nav(&quot;tutorials&quot;)" title="บทแนะนำ"><font><font>มากกว่า </font></font><i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display: none;"></i></a></li>
-      <li class="w3-right"><a href="javascript:void(0);" class="topnav-icons fa w3-right" onclick="open_search(this)" title="ค้นหา W3Schools"><font><font></font></font></a></li>
-      <li class="w3-right"><a href="javascript:void(0);" class="topnav-icons fa w3-right" onclick="open_translate(this)" title="Translate W3Schools"></a></li>
-      <li class="w3-right"><a href="/forum/default.asp">FORUM</a></li>
-      <li class="w3-right"><a id="topnavbtn_examples" href="javascript:void(0);" onclick="w3_open_nav(&quot;examples&quot;)" title="Examples">EXAMPLES <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a></li>
-      <li class="w3-right"><a id="topnavbtn_references" href="javascript:void(0);" onclick="w3_open_nav(&quot;references&quot;)" title="References">REFERENCES <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display: none;"></i></a></li>
-    </ul>
-    <div id="nav_tutorials" class="w3-dropnav w3-card-2" style="display: none;">
-      <span onclick="w3_close_nav(&quot;tutorials&quot;)" class="w3-closebtn w3-xlarge w3-hover-text-white" style="right:12px;">×</span>
-      <div class="w3-row-padding w3-padding-xxlarge">
-        <div class="w3-col l3 m6">
-          <h3>HTML and CSS</h3>
-          <a href="/html/default.asp">Learn HTML</a>
-          <a href="/css/default.asp">Learn CSS</a>
-          <a href="/w3css/default.asp">Learn W3.CSS</a>
-          <a href="/colors/default.asp">Learn Colors</a>
-          <a href="/bootstrap/default.asp">Learn Bootstrap</a>
-          <a href="/graphics/default.asp">Learn Graphics</a>
-          <a href="/icons/default.asp">Learn Icons</a>
-          <a href="/howto/default.asp">Learn How To</a>
-        </div>
-        <div class="w3-col l3 m6">  
-          <h3>JavaScript</h3>
-          <a href="/js/default.asp">Learn JavaScript</a>
-          <a href="/w3js/default.asp">Learn W3.JS</a>
-          <a href="/jquery/default.asp">Learn jQuery</a>
-          <a href="/jquerymobile/default.asp">Learn jQueryMobile</a>
-          <a href="/appml/default.asp">Learn AppML</a>
-          <a href="/angular/default.asp">Learn AngularJS</a>
-          <a href="/js/js_json_intro.asp">Learn JSON</a>
-          <a href="/js/js_ajax_intro.asp">Learn AJAX</a>
-          <div class="w3-hide-small"><br><br></div>
-        </div>
-        <div class="w3-col l3 m6">
-          <h3>Server Side</h3>
-          <a href="/sql/default.asp">Learn SQL</a>
-          <a href="/php/default.asp">Learn PHP</a>
-          <a href="/asp/default.asp">Learn ASP</a>
-          <h3>Web Building</h3>
-          <a href="/w3css/w3css_templates.asp">Web Templates</a>
-          <a href="/browsers/default.asp">Web Statistics</a>
-          <a href="/cert/default.asp">Web Certificates</a>
-        </div>
-        <div class="w3-col l3 m6">
-          <h3>XML</h3>
-          <a href="/xml/default.asp">Learn XML</a>
-          <a href="/xml/ajax_intro.asp">Learn XML AJAX</a>
-          <a href="/xml/dom_intro.asp">Learn XML DOM</a>
-          <a href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
-          <a href="/xml/schema_intro.asp">Learn XML Schema</a>
-          <a href="/xml/xsl_intro.asp">Learn XSLT</a>
-          <a href="/xml/xpath_intro.asp">Learn XPath</a>
-          <a href="/xml/xquery_intro.asp">Learn XQuery</a>
-        </div>
-      </div>
-      <br>
-    </div>
-    <div id="nav_references" class="w3-dropnav w3-card-2" style="display: none;">
-      <span onclick="w3_close_nav(&quot;references&quot;)" class="w3-closebtn w3-xlarge w3-hover-text-white" style="right:12px;">×</span>
-      <div class="w3-row-padding w3-padding-xxlarge">
-        <div class="w3-col m4">
-          <h3>HTML</h3>
-          <a href="/tags/default.asp">HTML Tag Reference</a>
-          <a href="/tags/ref_eventattributes.asp">HTML Event Reference</a>
-          <a href="/colors/default.asp">HTML Color Reference</a>
-          <a href="/tags/ref_attributes.asp">HTML Attribute Reference</a>
-          <a href="/tags/ref_canvas.asp">HTML Canvas Reference</a>
-          <a href="/graphics/svg_reference.asp">HTML SVG Reference</a>
-          <a href="/graphics/google_maps_reference.asp">Google Maps Reference</a>
-          <h3>CSS</h3>
-          <a href="/cssref/default.asp">CSS Reference</a>
-          <a href="/cssref/css_selectors.asp">CSS Selector Reference</a>
-          <a href="/w3css/w3css_references.asp">W3.CSS Reference</a>
-          <a href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap Reference</a>
-          <a href="/icons/icons_reference.asp">Icon Reference</a>
-        </div>
-        <div class="w3-col m4">
-          <h3>JavaScript</h3>
-          <a href="/jsref/default.asp">JavaScript Reference</a>
-          <a href="/jsref/default.asp">HTML DOM Reference</a>
-          <a href="/w3js/w3js_references.asp">W3.JS Reference</a>
-          <a href="/jquery/jquery_ref_selectors.asp">jQuery Reference</a>
-          <a href="/jquerymobile/jquerymobile_ref_data.asp">jQuery Mobile Reference</a>
-          <a href="/angular/angular_ref_directives.asp">AngularJS Reference</a>
-          <h3>XML</h3>
-          <a href="/xml/dom_nodetype.asp">XML Reference</a>
-          <a href="/xml/dom_http.asp">XML Http Reference</a>
-          <a href="/xml/xsl_elementref.asp">XSLT Reference</a>
-          <a href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
-        </div>
-        <div class="w3-col m4">
-          <h3>Charsets</h3>
-          <a href="/charsets/default.asp">HTML Character Sets</a>
-          <a href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
-          <a href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
-          <a href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
-          <a href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
-          <a href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
-          <a href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
-          <h3>Server Side</h3>
-          <a href="/php/php_ref_array.asp">PHP Reference</a>
-          <a href="/sql/sql_quickref.asp">SQL Reference</a>
-          <a href="/asp/asp_ref_response.asp">ASP Reference</a>
-        </div>
-      </div>
-      <br>
-    </div>
-    <div id="nav_examples" class="w3-dropnav w3-card-2" style="display: none;">
-      <span onclick="w3_close_nav(&quot;examples&quot;)" class="w3-closebtn w3-xlarge w3-hover-text-white" style="right:12px;">×</span>
-      <div class="w3-row-padding w3-padding-xxlarge">
-        <div class="w3-col l3 m6">
-          <h3>HTML/CSS</h3>
-          <a href="/html/html_examples.asp">HTML Examples</a>
-          <a href="/css/css_examples.asp">CSS Examples</a>
-          <a href="/w3css/w3css_examples.asp">W3.CSS Examples</a>
-          <a href="/w3css/w3css_templates.asp">W3.CSS Templates</a>
-          <a href="/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a>
-        </div>
-        <div class="w3-col l3 m6">
-          <h3>JavaScript</h3>
-          <a href="/js/js_examples.asp" target="_top">JavaScript Examples</a>
-          <a href="/js/js_dom_examples.asp" target="_top">HTML DOM Examples</a>
-          <a href="/w3js/w3js_examples.asp">W3.JS Examples</a>
-          <a href="/jquery/jquery_examples.asp" target="_top">jQuery Examples</a>
-          <a href="/jquerymobile/jquerymobile_examples.asp" target="_top">jQuery Mobile Examples</a>
-          <a href="/angular/angular_examples.asp" target="_top">AngularJS Examples</a>
-          <a href="/js/js_ajax_examples.asp" target="_top">AJAX Examples</a>
-        </div>
-        <div class="w3-col l3 m6">
-          <h3>Server Side</h3>
-          <a href="/php/php_examples.asp" target="_top">PHP Examples</a>
-          <a href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
-          <h3>XML</h3>
-          <a href="/xml/xml_examples.asp" target="_top">XML Examples</a>
-          <a href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
-          <a href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
-          <a href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
-          <a href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
-        </div>
-        <div class="w3-col l3 m6">
-          <h3>Quizzes</h3>
-          <a href="/quiztest/quiztest.asp?Qtest=HTML" target="_top">HTML Quiz</a>
-          <a href="/quiztest/quiztest.asp?Qtest=CSS" target="_top">CSS Quiz</a>
-          <a href="/quiztest/quiztest.asp?Qtest=JavaScript" target="_top">JavaScript Quiz</a>
-          <a href="/quiztest/quiztest.asp?Qtest=Bootstrap" target="_top">Bootstrap Quiz</a>
-          <a href="/quiztest/quiztest.asp?Qtest=jQuery" target="_top">jQuery Quiz</a>
-          <a href="/quiztest/quiztest.asp?Qtest=PHP" target="_top">PHP Quiz</a>
-          <a href="/quiztest/quiztest.asp?Qtest=SQL" target="_top">SQL Quiz</a>
-          <a href="/quiztest/quiztest.asp?Qtest=XML" target="_top">XML Quiz</a>
-        </div>
-      </div>
-      <br>
-    </div>
-  </div>
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
   
-
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account"><img src="/w3images/avatar2.png" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a>
+ </div>
+</div>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
   <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">'''</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
 </div>
 
 <!-- Page Container -->
@@ -206,7 +45,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <!-- Profile -->
       <div class="w3-card-2 w3-round w3-white">
         <div class="w3-container">
-         <h4 class="w3-center">nkjnkno</h4>
+         <h4 class="w3-center">My Profile</h4>
          <p class="w3-center"><img src="/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <hr>
          <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
