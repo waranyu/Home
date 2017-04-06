@@ -1,56 +1,96 @@
+
 <!DOCTYPE html>
 <html>
- <title>manu</title>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>manu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    
+    line-height: 1.5;
+}
 
-<img src="1.gif" alt="Nature" style="width:100%"><br><hr>
- <body class="w3-theme-l5">
-
-
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-  
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  
-  <div class="w3-col s5">
-  <a href="#" class=" w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right" style="height:25px;width:25px" ></i>หน้าแรก</a>
-  </div>
-  <div class="w3-col s4">
-    <div class=" w3-dropdown-hover w3-hide-small">
-       <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-cutlery w3-margin-right"></i><a>ร้านอาหาร</a><i class="w3-margin-left fa fa-caret-down"></i><span class="w3-badge w3-right w3-small w3-green"></span></button>     
-        <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-          <a href="https://www.google.co.th/" class="w3-bar-item w3-button">One new friend request</a>
-          <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-          <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-        </div>
-      </div>
-   </div>
-     <div class=" w3-dropdown-hover w3-hide-small">
-        <button class="w3-button w3-padding-large" title="Not"><i class="fa fa-qrcode w3-margin-right"></i><a>หมวดหมู</a><i class="w3-margin-left fa fa-caret-down"></i><span class="w3-badge w3-right w3-small w3-green"></span></button>     
-          <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-            <a href="https://www.google.co.th/" class="w3-bar-item w3-button">One new friend request</a>
-            <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-            <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-          </div>
-      </div>
+/* Create a Parallax Effect */
+ .bgimg-1,.bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
    
- </div>
-</div>
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 { 
+    background-image: url('1.gif');
+    min-height: 100%;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-row">
+  <a href="javascript:void(0)" onclick="openCity(event, 'London');">
  
- <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-  <a href="https://www.google.co.th/" class="w3-bar-item w3-button w3-padding-large">Link1</a>
-  <a href="https://www.google.co.th/" class="w3-bar-item w3-button w3-padding-large">Link2</a>
-  <a href="https://www.google.co.th/" class="w3-bar-item w3-button w3-padding-large">Link3</a>
-  
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+ 
+    <div class="w3-dropdown-hover w3-hide-small w3-third tablink  w3-hover-light-grey w3-padding">
+    <a href="#home" class=" w3-bar-item "><i class="fa fa-home"></i> หน้าแรก</a>
+    </div>
+    
+    
+    
+     <div class="w3-dropdown-hover w3-hide-small w3-third tablink   w3-padding">
+      <button class=" w3-button  " title="More"><i class="fa fa-cutlery"></i> ร้านอาหาร <i class="fa fa-caret-down"></i> </button> 
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    
+    
+    
+    <div class="w3-dropdown-hover w3-hide-small   w3-padding">
+      <button class="w3-button" title="More"><i class="fa fa-th"></i> หมวดหมู่ <i class="fa fa-caret-down"></i> </button> 
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+
+      
+  </div>
 </div>
+
+
+    
 
 
 
 </body>
-</html> 
+</html>
